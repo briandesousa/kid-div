@@ -1,0 +1,36 @@
+{
+  "name": "kid-div",
+  "version": "1.0.0",
+  "description": "A simple app that teaches kids the basics about stock investments and dividend income by tracking their investment.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briandesousa/kid-div"
+  },
+  "private": true,
+  "scripts": {
+    "dev-server": "nodemon --exec babel-node src/server/server.js --ignore dist/",
+    "dev-bundle": "webpack -wd"
+  },
+  "author": "Brian De Sousa",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-plugin-react": "^7.14.3",
+    "nodemon": "^1.19.2"
+  }
+}
