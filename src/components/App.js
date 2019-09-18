@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import styles from './App.css';
+import classNames from 'classnames';
 
 export default function App() {
   const [title] = useState('Kid Div : Investment and dividend tracking for kids');
   return (
     <main>
-      <header className={styles.header}>
-        <img src={'https://via.placeholder.com/1000x100/ccc?text=' + title} />
+      <header>
+        <h1>{title}</h1>
       </header>
-      <section className={styles.heroSection}>
-        Hero
-      </section>
-      <section className={styles.contentSection}>
-        Content
-      </section>
-      <aside className={styles.sidebar}>
-        Sidebar
-      </aside>
-      <footer className={styles.footer}>
+      <div className={classNames(styles.flexContainer, styles.wrapper)}>
+        <aside className={styles.sidebar}>
+          Sidebar
+        </aside>
+        <section className={styles.content}>
+          Content
+        </section>
+      </div>
+      <footer>
         Footer
       </footer>
     </main>

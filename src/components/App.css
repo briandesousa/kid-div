@@ -1,19 +1,40 @@
-.header {
+main {
+  background: #EEEEEE;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+header, section, aside, footer {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 640px) {
+  .flexContainer {
+    display: flex;
+  }
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.content {
   background: #cccccc;
-}
-
-.heroSection {
-  background: #dddddd;
-}
-
-.contentSection {
-  background: #bbbbbb;
+  flex: 1;
 }
 
 .sidebar {
   background: #aaaaaa;
+  flex: 0 1 300px;
 }
 
-.footer {
-  background: #cccccc;
+header {
+  text-align: center;
+}
+
+footer {
+  padding-top: 2em;
+  text-align: center;  
 }
