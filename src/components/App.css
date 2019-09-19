@@ -4,7 +4,6 @@ main {
 }
 
 header, section, aside, footer {
-  margin: 0;
   padding: 0.5rem;
 }
 
@@ -20,21 +19,39 @@ header, section, aside, footer {
 }
 
 .content {
-  background: #cccccc;
+  background: #0086C1;
   flex: 1;
 }
 
 .sidebar {
-  background: #aaaaaa;
+  background: #0086C1;
+  margin-right: 1rem;
   flex: 0 1 300px;
 }
 
 header {
+  margin: 0.5rem 0 0.5rem 0;
   text-align: center;
+}
+
+header h1 {
+  color: rgb(1, 75, 107);
+  margin: 0;
+}
+
+header h2 {
+  color: #0086C1;
+  margin: 0;
 }
 
 footer {
   padding-top: 2em;
   text-align: center;
   font-size: 0.7em;
+}
+
+header button {
+  float: right;
+  width: 100px;
+  background: black;
 }

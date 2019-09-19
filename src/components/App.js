@@ -10,21 +10,24 @@ export default function App() {
 
   return (
     <main>
-      <header>
-        <h1>{content.title}</h1>
-        <h2>{content.tagline}</h2>
-      </header>
-      <div className={classNames(styles.flexContainer, styles.wrapper)}>
-        <aside className={styles.sidebar}>
-          Sidebar
-        </aside>
-        <section className={styles.content}>
-          Content
-        </section>
+      <div className={styles.wrapper}>
+        <header>
+          <button>Login</button>
+          <h1>{content.title}</h1>
+          <h2>{content.tagline}</h2>
+        </header>
+        <div className={classNames(styles.flexContainer)}>
+          <aside className={styles.sidebar}>
+            Sidebar
+          </aside>
+          <section className={styles.content}>
+            Content
+          </section>
+        </div>
+        <footer>
+          <a href="https://github.com/briandesousa/kid-div" target="_blank" rel="noopener noreferrer">see on GitHub</a>
+        </footer>
       </div>
-      <footer>
-        <a href="https://github.com/briandesousa/kid-div" target="_blank" rel="noopener noreferrer">see on GitHub</a>
-      </footer>
     </main>
   );
 }
