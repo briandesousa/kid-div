@@ -23,7 +23,7 @@ export default function App() {
         </section>
       </div>
       <footer>
-        Footer
+        <a href="https://github.com/briandesousa/kid-div" target="_blank" rel="noopener noreferrer">see on GitHub</a>
       </footer>
     </main>
   );
