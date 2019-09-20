@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './App.css';
 import classNames from 'classnames';
+import HeaderLogin from './HeaderLogin';
 
 export default function App() {
   const [content] = useState({
@@ -8,12 +9,19 @@ export default function App() {
     tagline: 'Investment and dividend tracking for kids'
   });
 
+  const [user] = useState({
+    loggedIn: true,
+    userName: 'Brian'
+  });
+
   return (
     <main>
       <div className={styles.wrapper}>
         <header>
-          <button>Login</button>
           <h1>{content.title}</h1>
+          <div className={styles.buttonBar}>
+            <HeaderLogin user={user} />
+          </div>
           <h2>{content.tagline}</h2>
         </header>
         <div className={classNames(styles.flexContainer)}>
