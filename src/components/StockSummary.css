@@ -1,0 +1,21 @@
+.stockPriceIcon {
+  margin-right: 0.5rem;
+  font-size: 4rem;
+}
+
+.flexContainer {
+  display: flex;
+  color: lightgreen;
+}
+
+.stockPriceIconContainer {
+  flex-grow: 1;
+  font-weight: 'bold';
+
+}
+
+.stockPriceDescription {
+  flex-grow: 10;
+  padding-top: 0.5rem;
+  font-weight: bold;
+}

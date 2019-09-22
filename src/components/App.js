@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styles from './App.css';
-import classNames from 'classnames';
 import HeaderLogin from './HeaderLogin';
+import StockSummary from './StockSummary'
 
 export default function App() {
+
   const [content] = useState({
     title: 'Kid Div',
     tagline: 'Investment and dividend tracking for kids'
@@ -13,6 +14,11 @@ export default function App() {
     loggedIn: true,
     userName: 'Brian'
   });
+
+  const [stock] = useState({
+    name: 'Emera Incorporated',
+    price: '$57.65'
+  })
 
   return (
     <main>
@@ -24,13 +30,13 @@ export default function App() {
           </div>
           <h2>{content.tagline}</h2>
         </header>
-        <div className={classNames(styles.flexContainer)}>
+        <div className={styles.flexContainer}>
           <aside className={styles.sidebar}>
-            Sidebar
+            <StockSummary stock={stock} />
           </aside>
           <section className={styles.content}>
             Content
-          </section>
+            </section>
         </div>
         <footer>
           <a href="https://github.com/briandesousa/kid-div" target="_blank" rel="noopener noreferrer">see on GitHub</a>

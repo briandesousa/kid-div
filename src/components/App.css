@@ -18,18 +18,16 @@ header, section, aside, footer {
   max-width: 1200px;
 }
 
-.content {
-  background: #0086C1;
-  margin-right: 1rem;
-  flex: 1;
-  color: #ffffff;
-}
-
 .sidebar {
   background: #0086C1;
   margin-right: 1rem;
   flex: 0 1 300px;
   color: #ffffff;
+}
+
+.content h3,
+.sidebar h3 {
+  margin: 0px;
 }
 
 header {
